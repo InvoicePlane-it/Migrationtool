@@ -7,7 +7,7 @@
 */
 ?>
 
-<form action="/engine/save_config.php" method="post" role="form">
+<form action="<?php echo $base_url ?>engine/save_config.php" method="post" role="form">
 
     <p>Please enter the credentials for the database so the tool can make any necessary changes.</p>
 

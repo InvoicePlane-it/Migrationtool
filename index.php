@@ -14,7 +14,7 @@ require_once('engine.php');
 
 ?>
 
-<?php //---it--- aggiunta base_url per esecuzione in cartella ?>
+<?php //---it--- aggiunta base_url per esecuzione in cartella nei vari url presenti nello script ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -34,8 +34,8 @@ require_once('engine.php');
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script src="/assets/default/js/libs/jquery-1.11.1.min.js"></script>
-    <script src="/assets/default/js/libs/bootstrap-3.2.0.min.js"></script>
+    <script src="<?php echo $base_url ?>/assets/default/js/libs/jquery-1.11.1.min.js"></script>
+    <script src="<?php echo $base_url ?>/assets/default/js/libs/bootstrap-3.2.0.min.js"></script>
 
 </head>
 <body>

@@ -27,12 +27,12 @@
 
             $.ajax({
                 method: 'get',
-                url: '/engine/convert_db.php',
+                url: '<?php echo $base_url ?>engine/convert_db.php',
                 success: function(data) {
 
                     if ( data == '# Conversion successful! #' ) {
 
-                        window.location.replace(<?php echo $base_url ?>'step/finished');
+                        window.location.replace('<?php echo $base_url ?>step/finished');
 
                     } else {
 

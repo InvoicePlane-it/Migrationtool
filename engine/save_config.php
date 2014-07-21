@@ -7,6 +7,12 @@
 */
 session_start();
 
+// ---it---inizio
+require_once('../config.php');
+require_once('../engine.php');
+$base_url = substr($base_url, 0, strrpos($base_url, '/engine/')+1);
+// ---it---fine
+
 // Check if all fields have been entered
 if (
     isset( $_POST['database_name'] ) &&

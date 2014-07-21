@@ -9,6 +9,12 @@
 */
 session_start();
 
+// ---it---inizio
+require_once('../config.php');
+require_once('../engine.php');
+$base_url = substr($base_url, 0, strrpos($base_url, '/engine/')+1);
+// ---it---fine
+
 if ( isset($_SESSION['connection']) ) {
 
     $connection = mysqli_connect(
