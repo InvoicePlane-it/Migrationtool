@@ -14,6 +14,8 @@ require_once('engine.php');
 
 ?>
 
+<?php //---it--- aggiunta base_url per esecuzione in cartella ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +25,7 @@ require_once('engine.php');
     <title>InvoicePlane DB Conversion Tool</title>
 
     <!-- Bootstrap -->
-    <link href="/assets/default/css/style.css" rel="stylesheet">
+    <link href="<?php echo $base_url ?>assets/default/css/style.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -110,7 +112,7 @@ require_once('engine.php');
                 <div class="panel-footer">
                     <div class="row">
                         <div class="col-xs-6">
-                            <a href="/"><i class="fa fa-home"></i></a>
+                            <a href="<?php echo $base_url ?>"><i class="fa fa-home"></i></a>
                         </div>
                         <div class="col-xs-6 text-right text-muted">
                             <?php echo 'v'.TOOL_VERSION; ?>

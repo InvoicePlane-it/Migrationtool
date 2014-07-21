@@ -160,7 +160,7 @@ if ( isset($_SESSION['connection']) ) {
 } else { ?>
 
     <p class="alert alert-danger">
-        <span class="label label-danger">Error!</span> Please re-configure the database credentials <a href="/step/config">here</a>!
+        <span class="label label-danger">Error!</span> Please re-configure the database credentials <a href="<?php echo $base_url ?>step/config">here</a>!
     </p>
 
 <?php } ?>

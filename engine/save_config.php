@@ -40,7 +40,7 @@ if (
             'message' => 'Database connection valid.'
         );
 
-        header('location: /step/backup');
+        header('location: '.$base_url.'step/backup');
         exit;
 
 
@@ -52,7 +52,7 @@ if (
             'message' => 'The entered credentials are not correct. Please try again.'
         );
 
-        header('location: /step/config');
+        header('location: '.$base_url.'step/config');
         exit;
 
     }
@@ -65,7 +65,7 @@ if (
         'message' => 'Please enter all fields.'
     );
 
-    header('location: /step/config');
+    header('location: '.$base_url.'step/config');
     exit;
 
 }

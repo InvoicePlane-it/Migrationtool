@@ -32,7 +32,7 @@
 
                     if ( data == '# Conversion successful! #' ) {
 
-                        window.location.replace('/step/finished');
+                        window.location.replace(<?php echo $base_url ?>'step/finished');
 
                     } else {
 
